@@ -84,8 +84,8 @@ In this project, you will build the reducer, actions and basic redux connects to
   Connect this component to your smurfs and loading screen state slices.
   
   * [x] Connect the smurfs and loading state values to the SmurfList component.
-  * [ ] Replace the single Smurf component instance with a map return a Smurf component for each entry in the smurfs list.
-  * [ ] Replace the static isLoading variable with the state loading variable.
+  * [x] Replace the single Smurf component instance with a map return a Smurf component for each entry in the smurfs list.
+  * [x] Replace the static isLoading variable with the state loading variable.
 
 ### Complete components/AddForm.js
   Connect this component to the error state slice, setError and addSmurf actions. Complete the form handling code.
