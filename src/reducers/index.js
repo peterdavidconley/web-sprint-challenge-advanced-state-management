@@ -50,7 +50,7 @@ const reducer = (state = initialState, action)=>{
           ...state,
           smurfs: [],
           loading: false,
-          error: state.newErrorMessage,
+          error: action.payload,
         })
         default:
           return state;
