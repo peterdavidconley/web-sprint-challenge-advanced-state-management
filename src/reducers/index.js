@@ -25,7 +25,7 @@ const reducer = (state = initialState, action)=>{
         case(FETCH_SUCCESS):
         return({
           ...state,
-          smurfs: [...state, action.payload]
+          smurfs: action.payload,
           isFetching: false,
           error: '',
           
@@ -36,6 +36,13 @@ const reducer = (state = initialState, action)=>{
           smurfs: [],
           isFetching: false,
           error: action.payload,
+        })
+        case(ADD_SMURF): 
+        return ({
+          ...state,
+          smurfs: [...state.smurfs, action.payload],
+          isFetching: false,
+          error: '',
         })
         default:
           return state;
