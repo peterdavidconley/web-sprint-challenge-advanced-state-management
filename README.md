@@ -122,6 +122,8 @@ Helps pass data to highly nested components without having to drill props down e
 
 3. What does `redux-thunk` allow us to do? How does it change our `action-creators`?
 
+Redux thunk allows us to make the flow of data asynchronous and to make the API calls directly from our action creators. It changes our action creators by allowing us to make API calls from them.
+
 4. What is your favorite state management system you've learned and this sprint? Please explain why!
 
 Context API! It's by far the easiest to remember and implement :)
