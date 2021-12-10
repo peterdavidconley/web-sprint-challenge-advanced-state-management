@@ -16,7 +16,7 @@ In this challenge, you will build a Smurfs village database utilizing Redux as y
 
 ## Project Setup
 * [x] Run npm install to install your dependencies.
-* [ ] Run npm start to run your frontend and backend code automatically.
+* [x] Run npm start to run your frontend and backend code automatically.
 * [ ] Note your backend code will run automatically when your run npm start. There is no need to separately run a server.js file and no means to test the server through postman or the browser. Feel free to ignore any messages related to MSW or mock service workers.
 
 ## Project Instructions
