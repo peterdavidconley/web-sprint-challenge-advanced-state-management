@@ -77,7 +77,7 @@ In this project, you will build the reducer, actions and basic redux connects to
 ### Complete App.js
   Connect component to the fetchSmurfs action.
   
-  * [ ] Connect the fetchSmurfs actions to the App component.
+  * [x] Connect the fetchSmurfs actions to the App component.
   * [ ] Call the fetchSmurfs action when the component first loads.
 
 ### Complete components/SmurfList.js

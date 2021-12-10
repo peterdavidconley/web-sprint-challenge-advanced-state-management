@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { connect } from 'react-redux';
 import AddForm from './components/AddForm';
 import SmurfList from './components/SmurfList';
@@ -7,7 +7,12 @@ import { fetchSmurfs } from '../src/actions/index'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
-const App = ()=> {
+const App = (props)=> {
+
+  useEffect(() => {
+    props.fetchSmurfs();
+   }, [])
+
   return (
     <div className="App">
       <Header />
