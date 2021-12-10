@@ -44,6 +44,13 @@ const reducer = (state = initialState, action)=>{
           isFetching: false,
           error: '',
         })
+        case(EDIT_ERROR): 
+        return ({
+          ...state,
+          smurfs: [],
+          isFetching: false,
+          error: state.newErrorMessage,
+        })
         default:
           return state;
       }
