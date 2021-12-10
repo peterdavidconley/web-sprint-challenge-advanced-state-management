@@ -31,6 +31,8 @@ export const fetchSmurfs = () => {
     }
 }
 
+// Functions for dispatch in fetchSmurf action creator
+
 export const fetchStart = () => {
     return({type: FETCH_START})
 }
@@ -43,6 +45,8 @@ export const fetchFail = (error) => {
     return({type: FETCH_FAIL, payload: error})
 }
 
+// Final action creators
+
 export const addSmurf = (name, position, nickname, description) => {
     return({type: ADD_SMURF, payload:{
         id:Date.now,
@@ -53,8 +57,9 @@ export const addSmurf = (name, position, nickname, description) => {
     }})
  }
 
-// export const editError = (errorMessage) => {
-// }
+export const editError = (errorMessage) => {
+    return({ type: EDIT_ERROR, payload: errorMessage})
+}
 
 //Task List:
 //1. Add a thunk action called fetchSmurfs that triggers a loading status display in our application, performs an axios call to retreive smurfs from our server, saves the result of that call to our state and shows an error if one is made.
