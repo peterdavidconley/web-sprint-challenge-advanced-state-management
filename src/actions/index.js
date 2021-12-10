@@ -35,16 +35,23 @@ export const fetchStart = () => {
     return({type: FETCH_START})
 }
 
-export const fetchSuccess = (smurf) => {
-    return({type: FETCH_SUCCESS, payload: smurf})
+export const fetchSuccess = (smurfs) => {
+    return({type: FETCH_SUCCESS, payload: smurfs})
 }
 
 export const fetchFail = (error) => {
     return({type: FETCH_FAIL, payload: error})
 }
 
-// export const addSmurf = (newSmurf) => {
-// }
+export const addSmurf = (name, position, nickname, description) => {
+    return({type: ADD_SMURF, payload:{
+        id:Date.now,
+        name:name, 
+        position: position,
+        nickname: nickname,
+        description: description,
+    }})
+ }
 
 // export const editError = (errorMessage) => {
 // }

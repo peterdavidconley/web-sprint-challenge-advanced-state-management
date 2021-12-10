@@ -20,14 +20,14 @@ const reducer = (state = initialState, action)=>{
         return({
           ...state,
           smurfs: [],
-          isFetching: true,
+          loading: true,
           error: ''
         })
         case(FETCH_SUCCESS):
         return({
           ...state,
           smurfs: action.payload,
-          isFetching: false,
+          loading: false,
           error: '',
           
         })
@@ -35,21 +35,21 @@ const reducer = (state = initialState, action)=>{
         return ({
           ...state,
           smurfs: [],
-          isFetching: false,
+          loading: false,
           error: action.payload,
         })
         case(ADD_SMURF): 
         return ({
           ...state,
           smurfs: [...state.smurfs, action.payload],
-          isFetching: false,
+          loading: false,
           error: '',
         })
         case(EDIT_ERROR): 
         return ({
           ...state,
           smurfs: [],
-          isFetching: false,
+          loading: false,
           error: state.newErrorMessage,
         })
         default:
