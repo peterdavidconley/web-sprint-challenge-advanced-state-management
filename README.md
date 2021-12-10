@@ -120,6 +120,12 @@ Helps pass data to highly nested components without having to drill props down e
 
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
 
+Actions are functions, and their role in Redux is to create universal actions to manipulate state.
+
+Reducers are  functions that connect state to specific actions, and their role in Redux is to connect actions to the mutation of state.
+
+Store is the single source of state, and its role in Redux is to simplify state management. 
+
 3. What does `redux-thunk` allow us to do? How does it change our `action-creators`?
 
 Redux thunk allows us to make the flow of data asynchronous and to make the API calls directly from our action creators. It changes our action creators by allowing us to make API calls from them.
