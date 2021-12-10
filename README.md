@@ -78,12 +78,12 @@ In this project, you will build the reducer, actions and basic redux connects to
   Connect component to the fetchSmurfs action.
   
   * [x] Connect the fetchSmurfs actions to the App component.
-  * [ ] Call the fetchSmurfs action when the component first loads.
+  * [x] Call the fetchSmurfs action when the component first loads.
 
 ### Complete components/SmurfList.js
   Connect this component to your smurfs and loading screen state slices.
   
-  * [ ] Connect the smurfs and loading state values to the SmurfList component.
+  * [x] Connect the smurfs and loading state values to the SmurfList component.
   * [ ] Replace the single Smurf component instance with a map return a Smurf component for each entry in the smurfs list.
   * [ ] Replace the static isLoading variable with the state loading variable.
 
