@@ -26,8 +26,10 @@ const AddForm = (props) => {
         e.preventDefault();
         if (state.name === "" || state.position === "" || state.nickname === "") {
             //dispatch a custom error action
+            props.editError('ERROR MESSAGE')
         } else {
             //dispatch an addSmurf action
+            props.addSmurf(state.name,state.position, state.nickname, state.description)
         }
     }
 
