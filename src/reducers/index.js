@@ -13,7 +13,9 @@ export const initialState = {
     error: '',
 }
 
-const reducer = ()=>{
+const reducer = (state = initialState, action)=>{
+
+    
 }
 
 //**************DO NOT EDIT ANY CODE BEYOND THIS POINT**************//
